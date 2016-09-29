@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+    line-height: 1;
+    background: #5D778A;
+}
+	
+#banner {
+	margin: 0;
+	border-bottom: 2px solid #000000;
+	background: #FFFFFF;
+}
+
+.logo {
+	width: 5%;
+	margin: 10px;
+}
+
+.name {
+	width: 25%;
+	float: top;
+}
+
+.diagram {
+	float: right;
+	margin: 1%;
+}
+
+.links {
+	float: right;
+	margin: 1%;
+}
+
+.question {
+	float: right;
+	margin: 1%;
+}
+
+.podcast {
+	float: right;
+	margin: 1%;
+}
+
+.history {
+	float: right;
+	margin: 1%;
+	}

@@ -1,0 +1,321 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #5D778A;
+}
+
+
+#banner {
+	border-bottom: 2px solid #000000;
+	background: #FFFFFF;
+}
+	
+.logo {
+	width: 5%;
+	position: relative;
+	margin: 10px;
+}
+
+.name {
+	position: relative;
+	margin: 5%;
+}
+
+.diagram {
+	position: relative;
+	margin: 5%;
+
+}
+
+.links {
+	position: relative;
+	margin: 5%;
+
+}
+
+.question {
+	position: relative;
+	margin: 5%;
+
+}
+
+.podcast {
+	position: relative;
+	margin: 5%;
+
+}
+
+.history {
+	position: relative;
+	margin: 5%;
+
+}	
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+ 
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+ 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*begin our styles*/
+ 
+body {
+    font: 16px/1.4em 'Helvetica Neue', sans-serif;
+    color: #000000;
+}
+ 
+p, ul {
+    margin: 0 0 1em;
+}
+ 
+ul {
+    list-style: disc;
+    padding: 0 0 0 20px;
+}
+ 
+a {
+    color: #1D745A;
+}
+ 
+h1 {
+}
+ 
+h2 {
+    font-family: 'Helvetica Neue', serif;
+    font-size: 32px;
+    line-height: 1.4em;
+    margin: 0 0 .4em;
+    font-weight: bold;
+}
+ 
+/*layout*/
+ 
+.wrapper {
+}
+ 
+article {
+    border-bottom: 1px solid #d8d8d8;
+    padding: 10px 20px 0 20px;
+    margin: 10px 0;
+}
+ 
+/*header*/
+ 
+header {
+    background: #FFFFFF;
+    padding: 15px 50px;
+    border-bottom: 2px solid #000000;
+}
+ 
+        /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
+        header:before,
+        header:after {
+            content:"";
+            display:table;
+        }
+         
+        header:after {
+            clear:both;
+        }
+         
+        /* For IE 6/7 (trigger hasLayout) */
+        header {
+            zoom:1;
+        }
+ 
+h1.logo a {
+    color: #d8d8d8;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    letter-spacing: 0.2em;
+}
+ 
+a.to_nav {
+    float: right;
+    color: #fff;
+    background: #4e4e4e;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 22px;
+    height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+ 
+a.to_nav:hover,
+a.to_nav:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+
+/*navigation*/ 
+ 
+#primary_nav ul {
+    list-style: none;
+    background: #1c1c1c;
+    padding: 5px 0;
+}
+ 
+#primary_nav li a {
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+    height: 2em;
+    border-bottom: 1px solid #383838;
+}
+ 
+#primary_nav li:last-child a {
+    border-bottom: none;
+}
+ 
+#primary_nav li a:hover,
+#primary_nav li a:focus {
+    color: #1c1c1c;
+    background: #ccc;
+}
+ 
+/*footer*/
+ 
+footer {
+    font-family: 'PT Serif', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+/* body {
+	margin: 0;
+	background: #a2a2a2;
+	}
+
+@viewport{
+	zoom:1.0;
+	width:extend-to-zoom;
+	}
+
+
+.icon {
+	transform: 2;
+	}
+
+
+#BannerContainer {
+	width:780px;
+	position:relative;
+	overflow:hidden;
+	}
+	
+	
+.hidden h0 {
+	font-family: Times;
+	font-size: 14pt;
+	font-weight: normal;
+	position: absolute;
+	height: 15px;
+	width: 708px;
+	top: -9px;
+	padding-left: 60px;
+	border-right: 2px solid black;
+	}
+
+.maintitle h1 {
+	font-family: Times;
+	font-size: 68pt;
+	font-weight: normal;
+	padding-left: 60px;
+	border-right: 2px solid black;
+	position: absolute;
+	width: 708px;
+	top: -25px;
+	}
+	
+.subtitle h2 {
+	font-family: Helvetica Neue;
+	font-size: 14pt;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding-bottom: 1em;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	padding-left: 68px;
+	position: absolute;
+	width: 700px;
+	top: 90px;
+	}
+	
+#grad1 {
+    height: 150px;
+	background: linear-gradient(to right, #111111, #ffffff 20%);
+	background: -webkit-linear-gradient(left, #111111, #ffffff 20%);
+	background: -moz-linear-gradient(left, #888888, #DDDDDD 3%, #EEEEEE 5%, #FFFFFF 15%);
+	}
+*/
