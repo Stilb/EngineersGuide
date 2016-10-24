@@ -2,54 +2,82 @@ body {
 	margin: 0;
 }
 
-ul.topnav {
+#icon {
+	background-color; #AAAAAA;
+	padding: 1000;
+	margin: 1000;
+	}
+	
+	
+#logo {
+	float: left;
+	}
+		
+ul.w3-navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #DDDDDD;
-    border-bottom: 1px solid #000000;
+    background-color: #AAAAAA;
     font-family: Arial;
+    font-size: 22px;
 }
 
-ul.topnav li {float: right;}
+ul.w3-navbar em {
+	font-size: 16px;
+	font-style: normal;
+	font-family: Arial;
+	}
+	
+ul.w3-navbar ep {
+	font-size: 16px;
+	font-style: italic;
+	font-family: Arial narrow;
+	}
 
 ul.topnav li a {
     display: block;
     color: #000000;
     text-align: center;
-    padding: 10px 20px;
+    margin: 30px 30px;
     text-decoration: none;
+    float: right;
 }
 
-ul.topnav li a:hover:not(.active) {
+ul.w3-navbar li a:hover, .dropdown:hover .dropbtn {
     background-color: #000000;
     color: #FFFFFF;
 }
-
+	
 .title {
-    float: left;
+    float: right;
     margin: 10px 10px;
     background: #000000;
     color: #FFFFFF
 }
-
-/* ul.topnav li a.active {
-    background-color: #4CAF50;
-    float: left;
-} 
-*/
-
-
-ul.topnav li.right {float: right;}
 
 @media screen and (max-width: 600px){
     ul.topnav li.left, 
     ul.topnav li {float: none;}
 }
 
+h1 {
+	padding: 20px;
+	margin: 20px;
+	font-family: Engineering;
+	font-size: 24px;
+	}
+	
+p {
+	padding: 10px;
+	margin: 10px;
+	font-family: Arial;
+	font-size: 16px;
+	}
+	
+span {
+	font-family: Engineering;
+	font-size: 12px;
+	color: #AAAAAA;
+	}
 
-.logo {
-	width: 5%;
-	margin: 1%;
-}

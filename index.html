@@ -1,34 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>BibleStoryLinks</title>
-	<link rel="icon" href="Icon.png">
+	<title>BIBLEistics</title>
+	<link rel="icon" href="Logo.png">
 	<meta name="description" content="There's more to the stories">
 	<meta name="author" content="ADAM SHULL">
 
 	<!--Mobile specific meta info-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="initial-scale=1.0">
 
     <!--CSS-->
     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 </head>
 	
 <body id="home">
 
-	<ul class="topnav">
-  		<li><a href="#listen">LISTEN</a></li>
-		<li><a href="#ask">ASK</a></li>
-  		<li><a href="#read">READ</a></li>
-  		<li class="right"><a href="#see">SEE</a></li>
-  		<a class="title">BIBLE STORY LINKS</a>
-  		<img src="Logo.png">
-	</ul>
+<div id="nav">
+  <div id="icon">
+	  <img src="Logo.png" width=50px id="logo">  	
+  </div>
+  <ul class="w3-navbar w3-white w3-border-bottom w3-border-gray">
+    <li class="w3-right"><a href="javascript:void(0)" onclick="openTab('See')">S<em>EE</em></a></li>
+    <li class="w3-right"><a href="javascript:void(0)" onclick="openTab('Read')">R<em>EAD</em></a></li>
+    <li><a href="javascript:void(0)" onclick="openTab('Biblestorylinks')">BIBLE<ep>ISTICS</ep></a></li>
+  </ul>
+</div>
 
-	<div style="padding:0px 16px;">
-		<h2>JOB</h2>
-  		<p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
-  		<p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-  		<h4>Resize the browser window to see the effect.</h4>
-	</div>
+<div id="Read" class="w3-container tab">
+  <h1>Read</h1>
+  <p>There would be an article here</p>
+</div>
+
+<div id="See" class="w3-container tab">
+  <h2>See</h2>
+  <p>There would be a diagram here</p> 
+</div>
+
+<div id="Ask" class="w3-container tab">
+  <h2>Ask</h2>
+  <p>There would be Q&A here.</p>
+</div>
+
+<div id="Listen" class="w3-container tab">
+  <h2>Listen</h2>
+  <p>There would be a list of podcasts here.</p>
+</div>
+
+<div id="Archives" class="w3-container tab">
+  <h2>Archives</h2>
+  <p>There would be lists of all the various archives here.</p>
+</div>
+
+<div id="About" class="w3-container tab">
+  <h2>About</h2>
+  <p>There would be blurb about the author and point of the website.</p>
+</div>
+
+<script>
+openTab("Read")
+function openTab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    document.getElementById(tabName).style.display = "block";  
+}
+</script>
+
 </body>
 </html>
